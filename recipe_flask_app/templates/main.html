@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    body {
+      background: url({{ url_for('static', filename='img/all.png') }})
+    }
+    
+    .form {
+      margin: 0;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      -ms-transform: translate(-70%, 0%);
+      transform: translate(-80%, 0%);
+    }
+    
+</style>
+    
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+    
+<body>
+    <div class="form">
+        <form method="post">
+            <br><br>
+            <h3>What are you looking for?</h3>
+            <input type="text" name="dish name">
+            <br><br>
+
+            <p>What allergens would you like to exclude?</p>
+            <input type="checkbox" name="checkbox" id="milk_filter" value="milk">
+            <label for="milk">milk</label><br>
+            <input type="checkbox" name="checkbox" id="egg_filter" value="eggs">
+            <label for="eggs">eggs</label><br>
+            <input type="checkbox" name="checkbox" id="fish_filter" value="fish">
+            <label for="fish">fish</label><br>
+            <input type="checkbox" name="checkbox" id="shellfish_filter" value="shellfish">
+            <label for="shellfish">shellfish</label><br>
+            <input type="checkbox" name="checkbox" id="tree_nuts_filter" value="tree nuts">
+            <label for="tree nuts">tree nuts</label><br>    
+            <input type="checkbox" name="checkbox" id="peanuts_filter" value="peanuts">
+            <label for="peanuts">peanuts</label><br>
+            <input type="checkbox" name="checkbox" id="wheat_filter" value="wheat">
+            <label for="wheat">wheat</label><br>
+            <input type="checkbox" name="checkbox" id="soybeans_filter" value="soybeans">
+            <label for="soybeans">soybeans</label><br>    
+            <input type="checkbox" name="checkbox" id="sesame_filter" value="sesame">
+            <label for="sesame">sesame</label><br>
+            <br><br>
+
+            <input type="submit" value="Filter recipes">
+
+            </form> 
+    </div>
+</body>
+</html>
+

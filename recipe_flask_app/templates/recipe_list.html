@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    body {
+      background: url({{ url_for('static', filename='img/all.png') }})
+    }
+    
+    .list {
+      margin: 0;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      -ms-transform: translate(-50%, 0%);
+      transform: translate(-40%, 0%);
+      padding-bottom: 70px;
+}
+    
+</style>
+    
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+    
+<body>
+    <div class="list">
+        <br>
+        <h3>Recipes found: {{dish_num}}</h3>
+        <br><br>
+        {% for dish_id, dish_name in dish_dict.items() %}
+        <button style="background-color: burlywood" id="{dish_id}" type="button" onclick="window.location.href = {{dish_id}};" class="button">{{dish_name[0]}}</button>
+        <br>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
+
+
+
+

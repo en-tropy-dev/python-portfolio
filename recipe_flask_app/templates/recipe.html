@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    body {
+      background: url({{ url_for('static', filename='img/all.png') }})
+    }
+    
+    .list {
+      margin: 0;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      -ms-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
+        
+      word-wrap: break-word;
+      width: 550px;
+      padding-bottom: 70px;
+    }
+    
+    h3 {text-align: center;}
+    
+</style>
+    
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+    
+<body>
+
+    <div class="list">
+        <br><br>
+        <h3>{{dish_details[0]}}</h3>
+        <br>
+        <p>You will need:</p><br>
+        {% for ingredient in dish_details[1] %}
+        <div>{{ingredient}}</div>
+        {% endfor %}
+        <br>
+        <p>Recipe:</p>
+        <p>{{dish_details[2]}}</p>
+    </div>
+
+</body>
+</html>
+
