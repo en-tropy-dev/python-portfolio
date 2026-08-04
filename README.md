@@ -8,7 +8,7 @@ This portfolio currently consists of three items:
 Each of them has a dedicated folder.
 
 
-### Churn calculation
+### [Churn calculation](https://github.com/en-tropy-dev/python-portfolio/tree/main/churn_calculation)
 
 **Short summary:** logistic regression model was trained to make churn predictions.
 
@@ -17,7 +17,7 @@ Each of them has a dedicated folder.
 **Libraries:** scikit-learn, pandas
 
 
-### Get transactions
+### [Get transactions](https://github.com/en-tropy-dev/python-portfolio/tree/main/get_transactions)
 
 **Short summary:** transactions list is being requested from handelsbanken sandbox api.
 
@@ -26,7 +26,7 @@ Each of them has a dedicated folder.
 **Note:** in the beginning of the code client id is being extracted form the txt file. This file is empty in the repository, so the program will return 'there is an issue with file client_id.txt'.
 
 
-### Recipe flask app
+### [Recipe flask app](https://github.com/en-tropy-dev/python-portfolio/tree/main/recipe_flask_app)
 
 **Short summary:** it's a web app, which purpose is to search for recipes from input and filtering them out by allergens.
 
