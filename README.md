@@ -34,6 +34,6 @@ Each of them has a dedicated folder.
 
 **Libraries:** flask, pandas, markupsafe, ast
 
-**Note:** recipe dataset in folder was already sorted out by me for convenience. The original file was too big to upload. If you are interested how file was sorted, you can check sorting_recipes.py(https://github.com/en-tropy-dev/python-portfolio/blob/main/recipe_flask_app/sorting_recipes.py).
+**Note:** recipe dataset in folder was already sorted out by me for convenience. The original file was too big to upload. If you are interested how file was sorted, you can check [sorting_recipes.py](https://github.com/en-tropy-dev/python-portfolio/blob/main/recipe_flask_app/sorting_recipes.py).
 
 
