@@ -7,6 +7,8 @@ This portfolio currently consists of three items:
   
 Each of them has a dedicated folder.
 
+
+
 ### Churn calculation
 
 **Short summary:** logistic regression model was trained to make churn predictions.
@@ -24,6 +26,7 @@ Each of them has a dedicated folder.
 **Libraries:** requests, json, uuid, urllib
 
 **Note:** in the beginning of the code client id is being extracted form the txt file. This file is empty in the repository, so the program will return 'there is an issue with file client_id.txt'.
+
 
 
 ### Recipe flask app
